@@ -3,83 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hier finden Sie die Besten Gerichte aus der Arabischen Welt">
-    <meta name="keywords" content="Arabische Küche">
-    <meta name="author" content="Abdul Jabakhanji">
-    <meta name="publisher" content="Abdul Jabakhanji">
-    <title>Arabisches Essen</title>
+    <title>Arabische Küche</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #fdf6e3;
             margin: 0;
             padding: 0;
         }
+
         header {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
+            background: url('https://www.transparenttextures.com/patterns/arabesque.png') repeat;
+            background-color: #f9e4b7;
             text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid #e09f3e;
         }
-        h1 {
+
+        header h1 {
+            font-size: 2.8em;
+            color: #d94f04;
             margin: 0;
-            font-size: 2em;
         }
-        section {
-            padding: 20px;
+
+        .intro {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            font-size: 1.2em;
+            color: #444;
         }
-        h2 {
-            color: #333;
+
+        .intro span {
+            font-weight: bold;
+            color: #b45102;
         }
-        .dish-gallery {
+
+        .gerichte {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px;
+            justify-content: center;
+            gap: 30px;
+            padding: 40px 20px;
         }
-        .dish {
-            flex: 1;
-            min-width: 200px;
-            max-width: 300px;
+
+        .gericht {
+            background-color: #fffaf0;
+            border: 1px solid #e0cda9;
+            border-radius: 10px;
+            width: 280px;
             text-align: center;
+            padding: 20px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
         }
-        .dish img {
-            width: 100%;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .gericht img {
+            max-width: 100%;
+            border-radius: 10px;
         }
+
+        .gericht h3 {
+            margin-top: 15px;
+            color: #b45102;
+        }
+
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+            padding: 20px;
+            background-color: #f0d9b5;
+            color: #6a4e20;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Arabisches Essen</h1>
-    <p>Entdecke die köstliche Vielfalt der arabischen Küche</p>
+    <h1>Arabische Küche</h1>
 </header>
-</head>
-<body>
 
-    <h1>Shawarma El Lebanon</h1>
-    <img src="Shawarma_Rezept.jpg" alt="Bild mit Rahmen" width="300">
-    <p>shawarma ist echt lecker
+<section class="intro">
+    <p>Willkommen in der <span>Arabischen Küche</span>! Entdecke die Vielfalt und den Geschmack des Orients. Hier findest du köstliche Rezepte wie <strong>Shawarma</strong>, <strong>Falafel</strong> und <strong>Hummus</strong> – alles inspiriert von der traditionellen Küche des Nahen Ostens. Lass dich kulinarisch verführen!</p>
+</section>
+
+<section class="gerichte">
+    <div class="gericht">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Shawarma_Chicken_Plate.jpg" alt="Shawarma">
+        <h3>Shawarma</h3>
+        <p>Würziges Fleisch vom Spieß, serviert mit Fladenbrot und Tahinisauce.</p>
     </div>
-    <div>
-        <h1>Manakeesh Zaatar El Lebanon</h1>
-    <img src="Manakeesh Zaatar.jpg" alt="Bild mit Rahmen" width="300">
-    <p>Manakeesh Zaatar ist sooo lecker
-</div>
-<div>
-    <h1>Falafel El Lebanon</h1>
-<img src="Falafel With Tahini Sauce.jpg" alt="Bild mit Rahmen" width="300">
-<p>Falafel With Tahini Sauce ist das leckerste
+
+    <div class="gericht">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/Falafel_and_houmous.jpg" alt="Falafel">
+        <h3>Falafel</h3>
+        <p>Knusprige Bällchen aus Kichererbsen, perfekt als Snack oder Hauptgericht.</p>
+    </div>
+
+    <div class="gericht">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Houmous.jpg" alt="Hummus">
+        <h3>Hummus</h3>
+        <p>Cremiger Dip aus Kichererbsen, Tahini, Zitronensaft und Olivenöl.</p>
+    </div>
+</section>
+
+<footer>
+    © 2025 Arabische Küche – Mit Liebe und Gewürzen gekocht
+</footer>
+
 </body>
 </html>
