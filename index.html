@@ -1,136 +1,159 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<title>Arabisches Essen – Eine kulinarische Reise</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
+    <meta charset="UTF-8">
+    <title>Arabisches Essen – Eine kulinarische Reise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap');
 
-body {
-font-family: 'Scheherazade New', serif;
-background-color: #fff8e1;
-color: #4e342e;
-margin: 0;
-padding: 0;
-}
+        body {
+            margin: 0;
+            background: url('https://www.toptal.com/designers/subtlepatterns/patterns/symphony.png') repeat, #fefae0;
+            font-family: 'Scheherazade New', serif;
+            position: relative;
+            overflow-x: hidden;
+        }
 
-header {
-background: url('https://www.transparenttextures.com/patterns/arabesque.png');
-background-color: #f9e4b7;
-padding: 40px;
-text-align: center;
-border-bottom: 5px solid #e09f3e;
-}
+        .background-left, .background-right {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 150px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            z-index: 0;
+            opacity: 0.2;
+        }
 
-header h1 {
-font-size: 2.5em;
-margin: 0;
-}
+        .background-left {
+            left: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6b/Nasrid_style_column_Alhambra_Granada_Spain.jpg');
+        }
 
-.section {
-max-width: 900px;
-margin: 40px auto;
-padding: 0 20px;
-}
+        .background-right {
+            right: 0;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0a/Arabesque_arch_Morocco.jpg');
+        }
 
-.gericht {
-margin-bottom: 40px;
-}
+        .main-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
 
-.gericht img {
-max-width: 100%;
-border-radius: 10px;
-}
+        .gericht {
+            margin-bottom: 40px;
+        }
 
-h2, h3 {
-color: #b45102;
-}
+        .gericht img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
 
-ul {
-padding-left: 20px;
-}
+        h1 {
+            text-align: center;
+            color: #b45102;
+        }
 
-footer {
-background-color: #efebe9;
-padding: 20px;
-text-align: center;
-font-size: 0.9em;
-}
+        h2, h3 {
+            color: #b45102;
+        }
 
-footer a {
-color: #6d4c41;
-text-decoration: none;
-margin: 0 10px;
-}
-</style>
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #efebe9;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: #6d4c41;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
 </head>
 <body>
 
-<header>
-<h1>Arabisches Essen – Eine kulinarische Reise</h1>
-</header>
+<div class="background-left"></div>
+<div class="background-right"></div>
 
-<section class="section">
-<p>Die arabische Küche ist reich an Gewürzen, Farben und Geschichten. Sie spiegelt die Vielfalt und Traditionen des Nahen Ostens wider.</p>
-</section>
+<div class="main-content">
+    <h1>Arabisches Essen – Eine kulinarische Reise</h1>
 
-<section class="section gericht">
-<h2>Hummus</h2>
-<img src="hummus.jpg" alt="Hummus">
-<p>Ein cremiger Dip aus Kichererbsen, Tahini und Olivenöl – perfekt zu Fladenbrot.</p>
-<p><strong>Fun Fact:</strong> In einigen Regionen wird Hummus sogar zum Frühstück gegessen!</p>
-<h3>Zutaten:</h3>
-<ul>
-<li>1 Dose Kichererbsen</li>
-<li>2 EL Tahini</li>
-<li>1 Zitrone</li>
-<li>1 Knoblauchzehe</li>
-<li>Olivenöl</li>
-</ul>
-<h3>Zubereitung:</h3>
-<p>Alle Zutaten in einem Mixer glatt pürieren und mit Olivenöl servieren.</p>
-</section>
+    <section>
+        <p>Die arabische Küche ist reich an Gewürzen, Farben und Geschichten. Sie spiegelt die Vielfalt und Traditionen des Nahen Ostens wider.</p>
+    </section>
 
-<section class="section gericht">
-<h2>Shawarma</h2>
-<img src="shawarma.jpg" alt="Shawarma">
-<p>Würzig mariniertes Fleisch vom Grill, traditionell im Fladenbrot serviert.</p>
-<p><strong>Fun Fact:</strong> Shawarma ist das arabische Pendant zum Döner Kebab.</p>
-<h3>Zutaten:</h3>
-<ul>
-<li>500g Hähnchenfleisch</li>
-<li>Joghurt, Knoblauch, Zitronensaft, Gewürze</li>
-<li>Fladenbrot</li>
-</ul>
-<h3>Zubereitung:</h3>
-<p>Marinieren, grillen, aufschneiden und im Brot mit Gemüse servieren.</p>
-</section>
+    <section class="gericht">
+        <h2>Hummus</h2>
+        <img src="hummus.jpg" alt="Hummus">
+        <p>Ein cremiger Dip aus Kichererbsen, Tahini und Olivenöl – perfekt zu Fladenbrot.</p>
+        <p><strong>Fun Fact:</strong> In einigen Regionen wird Hummus sogar zum Frühstück gegessen!</p>
+        <h3>Zutaten:</h3>
+        <ul>
+            <li>1 Dose Kichererbsen</li>
+            <li>2 EL Tahini</li>
+            <li>1 Zitrone</li>
+            <li>1 Knoblauchzehe</li>
+            <li>Olivenöl</li>
+        </ul>
+        <h3>Zubereitung:</h3>
+        <p>Alle Zutaten in einem Mixer glatt pürieren und mit Olivenöl servieren.</p>
+    </section>
 
-<section class="section gericht">
-<h2>Falafel</h2>
-<img src="falafel.jpg" alt="Falafel">
-<p>Kichererbsenbällchen, außen knusprig, innen weich. Ein veganer Klassiker!</p>
-<p><strong>Fun Fact:</strong> Falafel stammt ursprünglich aus Ägypten!</p>
-<h3>Zutaten:</h3>
-<ul>
-<li>250g getrocknete Kichererbsen</li>
-<li>Zwiebel, Knoblauch, Petersilie, Koriander</li>
-<li>Gewürze, Backpulver</li>
-</ul>
-<h3>Zubereitung:</h3>
-<p>Kichererbsen einweichen, mixen, formen und frittieren.</p>
-</section>
+    <section class="gericht">
+        <h2>Shawarma</h2>
+        <img src="shawarma.jpg" alt="Shawarma">
+        <p>Würzig mariniertes Fleisch vom Grill, traditionell im Fladenbrot serviert.</p>
+        <p><strong>Fun Fact:</strong> Shawarma ist das arabische Pendant zum Döner Kebab.</p>
+        <h3>Zutaten:</h3>
+        <ul>
+            <li>500g Hähnchenfleisch</li>
+            <li>Joghurt, Knoblauch, Zitronensaft, Gewürze</li>
+            <li>Fladenbrot</li>
+        </ul>
+        <h3>Zubereitung:</h3>
+        <p>Marinieren, grillen, aufschneiden und im Brot mit Gemüse servieren.</p>
+    </section>
 
-<section class="section">
-<h2>Herkunft & Geschichte</h2>
-<p>Diese Gerichte stammen aus verschiedenen Regionen der arabischen Welt – vom Libanon über Palästina bis Ägypten. Oft sind sie Teil von Familienfesten und religiösen Feiern.</p>
-</section>
+    <section class="gericht">
+        <h2>Falafel</h2>
+        <img src="falafel.jpg" alt="Falafel">
+        <p>Kichererbsenbällchen, außen knusprig, innen weich. Ein veganer Klassiker!</p>
+        <p><strong>Fun Fact:</strong> Falafel stammt ursprünglich aus Ägypten!</p>
+        <h3>Zutaten:</h3>
+        <ul>
+            <li>250g getrocknete Kichererbsen</li>
+            <li>Zwiebel, Knoblauch, Petersilie, Koriander</li>
+            <li>Gewürze, Backpulver</li>
+        </ul>
+        <h3>Zubereitung:</h3>
+        <p>Kichererbsen einweichen, mixen, formen und frittieren.</p>
+    </section>
 
-<footer>
-<p>© 2025 Arabische Küche</p>
-<p><a href="#">Impressum</a> | <a href="#">Kontakt</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
-</footer>
+    <section>
+        <h2>Herkunft & Geschichte</h2>
+        <p>Diese Gerichte stammen aus verschiedenen Regionen der arabischen Welt – vom Libanon über Palästina bis Ägypten. Oft sind sie Teil von Familienfesten und religiösen Feiern.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 Arabische Küche</p>
+        <p><a href="#">Impressum</a> | <a href="#">Kontakt</a> | <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+    </footer>
+</div>
 
 </body>
 </html>
+
